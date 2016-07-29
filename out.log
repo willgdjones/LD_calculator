@@ -1,0 +1,14 @@
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf data/processed/CEPH.chr1.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf
+	--recode
+	--snps data/raw/rsIDs.txt
+	--stdout
+
+After filtering, kept 183 out of 183 Individuals
+Outputting VCF file...
+After filtering, kept 2023 out of a possible 4091679 Sites
+Run Time = 16.00 seconds
