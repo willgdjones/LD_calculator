@@ -21,3 +21,4 @@ for i in `seq 22`; do echo "vcftools --vcf CEPH.chr${i}.phase3_shapeit2_mvncall_
 #Generate R values given a list of SNPs
 plink2 --vcf <(vcftools --vcf CEPH.chr1.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf --snps rsIDs.txt --recode --stdout) --r square --out testLD
 
+for i in `seq 22`; do cat <(bcftools view data/processed/CEPH.chr${i}.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.bcf.gz | grep '#') <(bcftools view data/processed/CEPH.chr${i}.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.bcf.gz | grep -v '#' | awk '!seen[$3]++') | less | bcftools view -O b -o data/processed/CEPH.chr${i}.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.nodup.bcf.gz; echo $i; done;

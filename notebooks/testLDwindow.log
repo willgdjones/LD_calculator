@@ -1,26 +1,26 @@
 PLINK v1.90p 64-bit (25 Mar 2016)
 Options in effect:
-  --out testLD
+  --out testLDwindow
   --r square
-  --vcf temp.vcf
+  --vcf region.vcf
 
 Hostname: hh-yoda-08-01.ebi.ac.uk
 Working directory: /hps/nobackup/stegle/users/horta/dataset/1000G/LD_calculator/notebooks
-Start time: Fri Aug  5 15:24:39 2016
+Start time: Fri Aug  5 15:24:27 2016
 
-Random number seed: 1470407079
+Random number seed: 1470407067
 128648 MB RAM detected; reserving 64324 MB for main workspace.
---vcf: testLD-temporary.bed + testLD-temporary.bim + testLD-temporary.fam
-written.
-6 variants loaded from .bim file.
+--vcf: testLDwindow-temporary.bed + testLDwindow-temporary.bim +
+testLDwindow-temporary.fam written.
+335 variants loaded from .bim file.
 183 people (0 males, 0 females, 183 ambiguous) loaded from .fam.
-Ambiguous sex IDs written to testLD.nosex .
+Ambiguous sex IDs written to testLDwindow.nosex .
 Using up to 39 threads (change this with --threads).
 Before main variant filters, 183 founders and 0 nonfounders present.
 Calculating allele frequencies... done.
 Total genotyping rate is 0.540984.
-6 variants and 183 people pass filters and QC.
+335 variants and 183 people pass filters and QC.
 Note: No phenotypes present.
---r square to testLD.ld ... done.
+--r square to testLDwindow.ld ... done.
 
-End time: Fri Aug  5 15:24:39 2016
+End time: Fri Aug  5 15:24:27 2016
